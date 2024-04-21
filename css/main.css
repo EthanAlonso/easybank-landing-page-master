@@ -1,3 +1,8 @@
 body {
     padding-top: 100px;
 }
+
+img.resize {
+    height: 204px;
+    width: 306px;
+}
