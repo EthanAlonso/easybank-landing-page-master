@@ -1,7 +1,3 @@
-.bg-image {
-    overflow: visible;
-}
-
 img.resize {
     height: 203px;
     width: auto;
@@ -9,7 +5,8 @@ img.resize {
 
 img.desktop {
     height: 1000px;
-    width: auto;
+    width: fit-content;
+    overflow-x: hidden;
 }
 
 .page-footer {

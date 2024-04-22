@@ -39,7 +39,7 @@
   </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <header>
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary justify-content-center">
       <div class="container">
@@ -78,8 +78,10 @@
           <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
             <li>
               <form class="col">
-                <button class="btn btn-outline-success me-2 rounded-pill public-sans-h3" type="submit">Request
-                  Invite</button>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-outline-success me-2 rounded-pill public-sans-h3" type="submit">Request
+                    Invite</button>
+                </div>
               </form>
             </li>
           </ul>
@@ -89,25 +91,34 @@
   </header>
 
   <!--Top section-->
-  <div class="container">
-    <div class="row">
-      <div class="col col-lg-5 my-auto order-1 order-lg-0 pb-4">
-        <h2 class="public-sans-h2" style="font-size: 270%;">Next generation digital banking</h2>
-        <p class="public-sans-h3 py-4" style="color:gray;">
-          Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
-          budgeting, investing, and much more.
-        </p>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col my-auto order-1 order-lg-0 pb-4">
+          <div class="container-fluid" style="height: 100px"></div>
+          <div class="d-flex text-center text-md-start">
+            <h2 class="public-sans-h2" style="font-size: 270%;">Next generation digital banking</h2>
+          </div>
+          <p class="public-sans-h3 py-4 text-center text-md-start" style="color:gray;">
+            Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving,
+            budgeting, investing, and much more.
+          </p>
 
-        <!--Request Invite Button-->
-        <form type="container-fluid">
-          <button class="btn btn-outline-success me-2 public-sans-h3 rounded-pill" type="submit">Request Invite</button>
-        </form>
-      </div>
+          <!--Request Invite Button-->
+          <div type="container-fluid">
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <button class="btn btn-outline-success me-2 public-sans-h3 rounded-pill" type="submit">Request Invite</button>
+            </div>
+          </div>
+        </div>
 
-      <div class="col col-lg-7 order-0" style="background-image: url(/images/bg-intro-desktop.svg);">
-          <!--<img class="z-n1 hidden-mobile position-absolute desktop" src="/images/bg-intro-desktop.svg" alt="desktop background">-->
-          <img class="z-n1 visible-mobile position-absolute" src="/images/bg-intro-mobile.svg" alt="desktop background">
-          <img class="z-1" style="height:900px" src="/images/image-mockups.png">
+        <div class="col order-0">
+          <div class="col">
+            <img class="z-n1 hidden-mobile position-absolute desktop" src="/images/bg-intro-desktop.svg" alt="desktop background">
+            <img class="z-n1 visible-mobile position-absolute" src="/images/bg-intro-mobile.svg" alt="mobile background">
+            <img class="z-1 position-relative" style="height:900px" src="/images/image-mockups.png" alt="mockups">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -115,44 +126,59 @@
   <!--Middle section-->
   <div class="z-2 container-fluid middle-section">
     <div class="container">
-      <br>
-      <br>
-      <h2 class="public-sans-h2">Why choose Easybank?</h2><br>
-
-      <p class="public-sans-h3" style="color:gray">
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <h2 class="public-sans-h2 py-4">Why choose Easybank?</h2>
+      </div>
+      <p class="public-sans-h3 text-center text-md-start" style="color:gray">
         We leverage Open Banking to turn your bank account into your financial hub. <br>Control your finances like never
         before.
       </p>
 
       <div class="row py-4">
         <div class="col-md-3">
-          <img src="/images/icon-online.svg" alt="Online">
-          <h3 class="public-sans-h2">Online Banking</h3>
-          <p class="public-sans-h3">
-            Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
-            world.
-          </p>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <img class="pb-4" src="/images/icon-online.svg" alt="Online">
+          </div>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <h3 class="public-sans-h2">Online Banking</h3>
+          </div>
+            <p class="public-sans-h3 text-center text-md-start">
+              Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
+              world.
+            </p>
         </div>
         <div class="col-md-3">
-          <img src="/images/icon-budgeting.svg" alt="Budgeting">
-          <h3 class="public-sans-h2">Simple Budgeting</h3>
-          <p class="public-sans-h3">
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <img class="pb-4" src="/images/icon-budgeting.svg" alt="Budgeting">
+          </div>  
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <h3 class="public-sans-h2">Simple Budgeting</h3>
+          </div>
+          <p class="public-sans-h3 text-center text-md-start">
             See exactly where your money goes each month. Receive notifications when you’re close to hitting your
             limits.
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/images/icon-onboarding.svg" alt="Onboarding">
-          <h3 class="public-sans-h2">Fast Onboarding</h3>
-          <p class="public-sans-h3">
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <img class="pb-4" src="/images/icon-onboarding.svg" alt="Onboarding">
+          </div>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <h3 class="public-sans-h2">Fast Onboarding</h3>
+          </div>
+          <p class="public-sans-h3 text-center text-md-start">
             We don’t do branches. Open your account in minutes online and start taking control of your finances right
             away.
           </p>
         </div>
         <div class="col-md-3">
-          <img src="/images/icon-api.svg" alt="API">
-          <h3 class="public-sans-h2">Open API</h3>
-          <p class="public-sans-h3">
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <img class="pb-4" src="/images/icon-api.svg" alt="API">
+          </div>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <h3 class="public-sans-h2">Open API</h3>
+          </div>
+          <p class="public-sans-h3 text-center text-md-start">
             Manage your savings, investments, pension, and much more from one account. Tracking your money has never
             been easier.
           </p>
@@ -165,10 +191,12 @@
   <!--Article section-->
   <div class="container-fluid pb-4 pt-4">
     <div class="container pt-4">
-      <h2 class="public-sans-h2">Latest Articles</h2><br>
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <h2 class="public-sans-h2 pb-4" style="font-size: xx-large;">Latest Articles</h2><br>
+      </div>
 
       <div class="row">
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 pb-4">
           <div class="card" style="height:100%">
             <img src="/images/image-currency.jpg" class="card-img-top resize" alt="Currency">
             <div class="card-body">
@@ -182,7 +210,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 pb-4">
           <div class="card" style="height:100%">
             <img src="/images/image-restaurant.jpg" class="card-img-top resize" alt="Restaurant">
             <div class="card-body">
@@ -196,7 +224,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 pb-4">
           <div class="card" style="height:100%">
             <img src="/images/image-plane.jpg" class="card-img-top resize" alt="Plane">
             <div class="card-body">
@@ -210,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 pb-4">
           <div class="card" style="height:100%">
             <img src="/images/image-confetti.jpg" class="card-img-top resize" alt="Confetti">
             <div class="card-body">
@@ -232,43 +260,29 @@
     <div class="container">
       <div class="row">
         <!--Logo and social media links-->
-        <div class="col-md">
+        <div class="col-lg col-12">
           <div class="d-flex justify-content-center justify-content-md-start">
             <div class="row">
-              <a class="navbar-brand" href="index">
+              <a class="navbar-brand" href="index.html">
                 <img src="/images/logo-white.svg" alt="Easybank">
               </a>
             </div>
           </div>
 
           <br>
-          <div class="col-8">
-            <div class="d-inline-flex justify-content-center justify-content-md-center pb-2">
-              <div class="row">
-                <div class="col">
-                  <a href="#facebook"><img src="/images/icon-facebook.svg" alt="Facebook"></a>
-                </div>
-                <div class="col">
-                  <a href="#Youtube"><img src="/images/icon-youtube.svg" alt="Youtube"></a>
-                </div>
-                <div class="col">
-                  <a href="#Twitter"><img src="/images/icon-twitter.svg" alt="Twitter"></a>
-                </div>
-                <div class="col">
-                  <a href="#Pinteres"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a>
-                </div>
-                <div class="col">
-                  <a href="#Instagram"><img src="/images/icon-instagram.svg" alt="Instagram"></a>
-                </div>
-              </div>
-            </div>
+          <div class="inline-block text-center text-md-start pb-4">
+            <a href="#facebook"><img src="/images/icon-facebook.svg" alt="Facebook"></a>                        
+            <a href="#Youtube"><img src="/images/icon-youtube.svg" alt="Youtube"></a>
+            <a href="#Twitter"><img src="/images/icon-twitter.svg" alt="Twitter"></a>
+            <a href="#Pinteres"><img src="/images/icon-pinterest.svg" alt="Pinterest"></a>
+            <a href="#Instagram"><img src="/images/icon-instagram.svg" alt="Instagram"></a>
           </div>
         </div>
 
         <!--Links to other company pages-->
-        <div class="col-md">
+        <div class="col-lg col-12">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center text-md-start">
               <div class="row pb-2">
                 <a href="pages/about.html" class="link-light ink-underline link-underline-opacity-0">About Us</a>
               </div>
@@ -279,7 +293,7 @@
                 <a href="pages/blog.html" class="link-light link-underline link-underline-opacity-0">Blog</a>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center text-md-start">
               <div class="row pb-2">
                 <a href="pages/careers.html" class="link-light link-underline link-underline-opacity-0">Careers</a>
               </div>
@@ -297,11 +311,11 @@
 
 
         <!--Request Invite Button and copyright-->
-        <div class="col-md ms-auto my-auto text-end">
+        <div class="col-lg col-12 ms-auto my-auto text-end">
           <div class="d-flex justify-content-center justify-content-md-end">
             <button class="btn btn-outline-success rounded-pill public-sans-h3" type="submit">Request Invite</button>
           </div>
-          <div class="d-flex justify-content-center justify-content-md-start">
+          <div class="d-flex justify-content-center justify-content-md-end">
             <p class="copyright-text pt-4">© Easybank. All Rights Reserved</p>
           </div>
         </div>
