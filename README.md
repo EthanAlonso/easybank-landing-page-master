@@ -51,5 +51,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Ethan Alonso]([https://www.your-site.com](https://www.linkedin.com/in/ethan-alonso/))
+- Website - [Ethan Alonso](https://www.linkedin.com/in/ethan-alonso/)
 
