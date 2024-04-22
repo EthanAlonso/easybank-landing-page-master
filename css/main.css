@@ -1,8 +1,66 @@
-body {
-    padding-top: 100px;
+.bg-image {
+    overflow: visible;
 }
 
 img.resize {
-    height: 204px;
-    width: 306px;
+    height: 203px;
+    width: auto;
 }
+
+img.desktop {
+    height: 1000px;
+    width: auto;
+}
+
+.page-footer {
+    background-color: hsl(from darkblue 233 26% 24%);
+}
+
+.copyright-text {
+    color: gray;
+}
+
+
+.public-sans-h3 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.public-sans-h2 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.public-sans-h1 {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.middle-section {
+    background-color: hsl(from lightgray 0 0% 98%);
+}
+
+.btn {
+    background: linear-gradient(to right, limegreen, cyan);
+    color: white;
+}
+
+.visible-mobile {
+    display: none !important;
+  }
+  
+  @media (max-width: 500px) {
+    .visible-mobile {
+      display: inline !important;
+    }
+  
+    .hidden-mobile {
+      display: none !important;
+    }
+  }
